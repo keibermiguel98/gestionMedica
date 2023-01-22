@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/historyMedica.css">
+    <title>History medic</title>
+</head>
+<body>
+     <div id="page" class="site">
+        <div class="container">
+            <div class="form-box">
+                <div class="progress">
+                    <div class="logo"><a href="/"><span>.Do</span>ctus</a></div>
+                    <ul class="progress-steps">
+                        <li class="step active">
+                            <span>1</span>
+                            <p>Motivo<br><span>25 secs to complete</span></p>
+                        </li>
+                        <li class="step">
+                            <span>2</span>
+                            <p>Personal<br><span>60 secs to complete</span></p>
+                        </li>
+                        <li class="step">
+                            <span>3</span>
+                            <p>Enfermedades<br><span>30 secs to complete</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <form action="#">
+                    <!--Formulario one-->
+                    <div class="form-one form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Personal informacion</h2>
+                        <p>Enter tu personal informacion correctly</p>
+                        <div>
+                            <label>First name</label>
+                            <input type="text" placeholder="e.g. Paul">
+                        </div>
+                        <div class="birth">
+                            <label>Date of birth</label>
+                            <div class="grouping">
+                                <input type="text" pattern="*[0-9]*" id="day" value="" min="0" max="31" placeholder="DD">
+                                <input type="text" pattern="*[0-9]*" id="month" value="" min="0" max="12" placeholder="MM">
+                                <input type="text" pattern="*[0-9]*" id="year" value="" min="0" max="2050" placeholder="YYYY">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label>Last name</label>
+                            <input type="text" placeholder="e.g. Linarez">
+                        </div>
+                    </div>
+                     
+                    <!--Formulario two-->
+                    <div class="form-two form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Contact</h2>
+                        <div>
+                            <label>Phone</label>
+                            <input type="tel" placeholder="+62xxxxxx">
+                        </div>
+
+                        <div>
+                            <label>Adress</label>
+                            <input type="text" placeholder="Street address">
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="App, Suite, Building">
+                        </div>
+
+                        <div>
+                            <label>City</label>
+                            <input type="text" placeholder="City">
+                        </div>
+
+                        <div>
+                            <label>State</label>
+                            <input type="text" placeholder="State/province">
+                        </div>
+
+                        <div>
+                            <label>Zip Code</label>
+                            <input type="text" placeholder="Postal/Zip Code">
+                        </div>
+                        
+                        <div>
+                            <label>Country</label>
+                            <select name="country" id="country">
+                                <option value="">Please select</option>
+                                <option value="Afganistan">Afganistan</option>
+                            </select>
+                        </div>
+
+                        <!--form Three-->
+
+                        <div class="form-three form-step">
+                           <div class="bg-svg"></div>
+                           <h2>Security</h2>
+                           <div>
+                            <label for="">Email</label>
+                            <input type="email" placeholder="your email address">
+                           </div>
+
+                           <div>
+                            <label for="">Username</label>
+                            <input type="email" placeholder="your email address">
+                           </div>
+
+                           <div>
+                            <label for="">Password</label>
+                            <input type="email" placeholder="your email address">
+                           </div>
+
+                           <div>
+                            <input type="email" placeholder="your email address">
+                           </div>
+
+                           <div class="checkbox">
+                            <input type="email" placeholder="your email address">
+                            <label for="">Receive our news letter and special offers</label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-prev" disabled>Back</button>
+                        <button class="btn-prev">Next step</button>
+                        <button class="btn-prev">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+     </div>
+     
+    <script src="./js/controllers/historyMedica/historyMedica.js"></script>
+</body>
+</html>
