@@ -42,7 +42,7 @@
                   <i class='bx bx-folder'></i>
                   <i class='bx bxs-folder'></i>
                 </div>
-                <span class="btn-add-history link hide">History Medica</span>
+                <span class="btn-add-history link hide">Historia Medica</span>
               </a>
             </li>
             <li class="tooltip-element" data-tooltip="2">
@@ -51,7 +51,7 @@
                   <i class='bx bx-message-square-detail'></i>
                   <i class='bx bxs-message-square-detail'></i>
                 </div>
-                <span class="link hide">Messages</span>
+                <span class="link hide">Pacientes</span>
               </a>
             </li>
             <li class="tooltip-element" data-tooltip="3">
@@ -60,15 +60,10 @@
                   <i class='bx bx-bar-chart-square'></i>
                   <i class='bx bxs-bar-chart-square'></i>
                 </div>
-                <span class="link hide">Analytics</span>
+                <span class="link hide">Panel de acceso</span>
               </a>
             </li>
-            <div class="tooltip">
-              <span class="show">Dashboard</span>
-              <span>Projects</span>
-              <span>Messages</span>
-              <span>Analytics</span>
-            </div>
+        
           </ul>
     
           <h4 class="hide">Shortcuts</h4>
@@ -134,9 +129,11 @@
     
     
       <main>
-        <h1>My Dashboard</h1>
-        <hr>
-        <div class="text">
+        <!--Step 1 panel de Accesos-->
+        <div class="panelAcceso">
+          <h1>My Dashboard</h1>
+          <hr>
+
           <button class="btn btn-primary">Añadir</button>
           <div class="container my-5"> 
             <div class="shadow-4 rounded-5 overflow-hidden">
@@ -251,6 +248,127 @@
             </div>
           </div>
         </div>
+       
+        <!--Step 2 Pacientes-->
+        <div class="pacientes">
+          <h1>Pacientes</h1>
+          <hr>
+          
+          <button class="btn btn-primary">Añadir</button>
+          <div class="container my-5"> 
+            <div class="shadow-4 rounded-5 overflow-hidden">
+              <table class="table align-middle mb-0 bg-white">
+                <thead class="bg-light">
+                  <tr>
+                    <th>Name</th>
+                    <th>Especialidad</th>
+                    <th>Status</th>
+                    <th>Area</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <img
+                             src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                             alt=""
+                             style="width: 45px; height: 45px"
+                             class="rounded-circle"
+                             />
+                        <div class="ms-3">
+                          <p class="fw-bold mb-1">John Doe</p>
+                          <p class="text-muted mb-0">john.doe@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fw-bold mb-1">Cardiologo</p>
+                      <p class="text-muted mb-0">IT department</p>
+                    </td>
+                    <td>
+                      <span class="btn btn-success rounded-pill">Active</span>
+                    </td>
+                    <td>Cardiologia</td>
+                    <td>
+                      <button type="button" class="btn btn-link btn-sm btn-rounded">
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <img
+                             src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                             class="rounded-circle"
+                             alt=""
+                             style="width: 45px; height: 45px"
+                             />
+                        <div class="ms-3">
+                          <p class="fw-bold mb-1">Alex Ray</p>
+                          <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fw-normal mb-1">Internista</p>
+                      <p class="text-muted mb-0">Finance</p>
+                    </td>
+                    <td>
+                      <span class="btn btn-primary rounded-pill">waiting</span>
+                    </td>
+                    <td>Emergencia</td>
+                    <td>
+                      <button
+                              type="button"
+                              class="btn btn-link btn-rounded btn-sm fw-bold"
+                              data-mdb-ripple-color="dark"
+                              >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <img
+                             src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                             class="rounded-circle"
+                             alt=""
+                             style="width: 45px; height: 45px"
+                             />
+                        <div class="ms-3">
+                          <p class="fw-bold mb-1">Kate Hunington</p>
+                          <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fw-normal mb-1">Ginecologo</p>
+                     
+                    </td>
+                    <td>
+                      <span class="btn btn-danger rounded-pill">disabled</span>
+                    </td>
+                    <td>Ginecologia</td>
+                    <td>
+                      <button
+                              type="button"
+                              class="btn btn-link btn-rounded btn-sm fw-bold"
+                              data-mdb-ripple-color="dark"
+                              >
+                        Edit
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
         <p class="copyright">
           &copy; 2023 - <span>Doctus</span> All Rights Reserved.
         </p>

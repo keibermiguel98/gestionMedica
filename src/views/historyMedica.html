@@ -30,26 +30,27 @@
                 </div>
                 <form action="#">
                     <!--Formulario one-->
-                    <div class="form-one form-step">
+                    <div class="form-one form-step active">
                         <div class="bg-svg"></div>
-                        <h2>Personal informacion</h2>
-                        <p>Enter tu personal informacion correctly</p>
+                        <h2>Motivo</h2>
+                        <p>Ingrese el motivo de consulta correctamente!🩺</p>
                         <div>
-                            <label>First name</label>
+                            <label>Motivo de consulta</label>
                             <input type="text" placeholder="e.g. Paul">
                         </div>
-                        <div class="birth">
-                            <label>Date of birth</label>
-                            <div class="grouping">
-                                <input type="text" pattern="*[0-9]*" id="day" value="" min="0" max="31" placeholder="DD">
-                                <input type="text" pattern="*[0-9]*" id="month" value="" min="0" max="12" placeholder="MM">
-                                <input type="text" pattern="*[0-9]*" id="year" value="" min="0" max="2050" placeholder="YYYY">
-                            </div>
+                        <div class="bg-svg">
+                            <label>Enfermedad actual</label>
+                               <input type="text">
+                        </div>
+
+                        <div class="bg-svg">
+                            <label>Diagnostico presuntivo</label>
+                               <input type="text">
                         </div>
 
                         <div>
-                            <label>Last name</label>
-                            <input type="text" placeholder="e.g. Linarez">
+                            <label>Tratamiento hospitalario</label>
+                            <input type="text" placeholder="Ejemplo: Coctel multivitaminico, Meropene, etc..">
                         </div>
                     </div>
                      
@@ -126,8 +127,8 @@
                     </div>
                     <div class="btn-group">
                         <button class="btn-prev" disabled>Back</button>
-                        <button class="btn-prev">Next step</button>
-                        <button class="btn-prev">Submit</button>
+                        <button class="btn-next">Next step</button>
+                        <button class="btn-submit">Submit</button>
                     </div>
                 </form>
             </div>

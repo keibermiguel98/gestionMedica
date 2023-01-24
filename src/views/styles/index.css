@@ -5,12 +5,21 @@
   box-sizing: border-box;
 }
 
+.panelAcceso{
+ display: none;
+}
+
+.pacientes{
+  display: none;
+}
+
 :root {
   --main-color: #3d5af1;
   --main-color-dark: #3651d4;
   --main-color-light: #5872f5;
   --text-color: #cfcde7;
 }
+
 
 body {
   font-family: "Poppins", sans-serif;
@@ -389,4 +398,5 @@ body.shrink .tooltip {
   width: 20px;
   height: 20px;
 }
+
 
